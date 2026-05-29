@@ -1,0 +1,18 @@
+# Cache et fichiers temporaires du système
+.DS_Store
+Thumbs.db
+*.log
+
+# Dossiers et index générés localement par Cydia Repo Builder
+# (Ces fichiers appartiennent au dépôt Cydia final, pas au constructeur d'outils)
+debs/
+Packages
+Packages.gz
+Packages.bz2
+Release
+update.sh
+
+# Dossiers temporaires de déploiement
+Preparate/
+prj/
+index.html
