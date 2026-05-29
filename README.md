@@ -34,4 +34,6 @@ Your local suite consists of 4 primary executable scripts:
 ### 1. Set Permissions
 Clone or copy the 4 management scripts into your local working directory and grant them global Unix execution privileges:
 ```bash
+cd ~/Cydia-Repo-Builder
+cd Preparate
 chmod +x *.sh
