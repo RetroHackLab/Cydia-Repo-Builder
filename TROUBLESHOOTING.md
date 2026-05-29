@@ -11,4 +11,6 @@ When attempting to run `./Projects.sh`, `./Update.sh`, `./Packages.sh`, or `./gi
 * **Cause:** The scripts do not have executable permissions flag set.
 * **Solution:** Run the following command in your terminal to grant global execution rights:
 ```bash
+  cd ~/Cydia-Repo-Builder
+  cd Preparate
   chmod +x Projects.sh Packages.sh Update.sh github.sh
