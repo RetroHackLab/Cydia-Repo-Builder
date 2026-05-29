@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cydia Repo Builder 🛠️</title>
+    <style>
+        :root {
+            --bg-color: #f4f4f9;
+            --text-color: #333;
+            --accent-color: #007acc;
+            --card-bg: #fff;
+            --border-color: #ddd;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 {
+            color: var(--accent-color);
+        }
+        h1 {
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+            text-align: center;
+        }
+        h2 {
+            margin-top: 30px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 5px;
+        }
+        code {
+            background: #272822;
+            color: #f8f8f2;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 0.9em;
+        }
+        pre {
+            background: #272822;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 6px;
+            overflow-x: auto;
+        }
+        pre code {
+            background: none;
+            color: inherit;
+            padding: 0;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .btn-cydia {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            text-align: center;
+            background-color: #fc9803;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+        .btn-cydia:hover {
+            background-color: #e08500;
+        }
+        .error-box {
+            background: #fff3f3;
+            border-left: 4px solid #dc3545;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 0 6px 6px 0;
+        }
+        .error-title {
+            font-weight: bold;
+            color: #dc3545;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Cydia Repo Builder 🛠️</h1>
+    <p>Welcome to your automated Cydia Repository! This space hosts secure, custom Debian package branches tailored for target environments.</p>
+    
+    <!-- Bouton interactif Cydia -->
+    <a href="cydia://url/https://cydia.saurik.com/api/share#?source=https://github.com" class="btn-cydia">✨ Add to Cydia</a>
+
+    <!-- Section: How to Use -->
+    <h2>🚀 How to Use</h2>
+    <p>Follow these standard terminal steps to initialize and build your custom Cydia repository architecture:</p>
+    <ul>
+        <li>
+            <strong>Set Permissions:</strong> Grant executable privileges to your primary local management utilities:
+            <pre><code>chmod +x Projects.sh Packages.sh Update.sh github.sh</code></pre>
+        </li>
+        <li>
+            <strong>Scaffold Architecture:</strong> Run the main compiler pipeline to set up your metadata structures:
+            <pre><code>./Projects.sh</code></pre>
+        </li>
+        <li>
+            <strong>Generate Runtime Compiler:</strong> Generate your localized database refresher script:
+            <pre><code>./Update.sh</code></pre>
+        </li>
+        <li>
+            <strong>Index Tweaks:</strong> Place your compiled <code>.deb</code> packages inside the <code>/debs</code> directory and index them:
+            <pre><code>./Packages.sh</code></pre>
+        </li>
+        <li>
+            <strong>Deploy Upstream:</strong> Run the isolated git tracker to push production files securely to GitHub Pages:
+            <pre><code>./github.sh</code></pre>
+        </li>
+    </ul>
+
+    <!-- Section: Troubleshooting -->
+    <h2>🔍 Troubleshooting</h2>
+    <p>Quick fixes for common setup errors and platform alignment anomalies:</p>
+    
+    <div class="error-box">
+        <div class="error-title">❌ Error: Permission Denied</div>
+        <p>Your local terminal environment blocks the script launch. Resolve it by applying global execution flags: <code>chmod +x *.sh</code>.</p>
+    </div>
+
+    <div class="error-box">
+        <div class="error-title">❌ Error: \r: command not found (CRLF Issues)</div>
+        <p>Windows-style line endings break Unix script execution. Convert your configuration assets back to standard Unix format using: <code>dos2unix *.sh</code>.</p>
+    </div>
+
+    <div class="error-box">
+        <div class="error-title">❌ Error: Hash Sum Mismatch inside Cydia</div>
+        <p>The Cydia database cache is out of sync with your updated package indices. Re-run your localized database indexing core utility <code>./Packages.sh</code> and execution tool <code>./update.sh</code>, then refresh sources directly within Cydia.</p>
+    </div>
+
+    <div class="error-box">
+        <div class="error-title">❌ Error: 404 Not Found on GitHub Pages</div>
+        <p>Verify your remote deployment targets. Navigate to your repository settings on GitHub Web, go to <strong>Pages</strong>, and ensure the deployment source points to your <code>main</code> branch at the <code>/ (root)</code> directory pathway.</p>
+    </div>
+</div>
+
+</body>
+</html>
